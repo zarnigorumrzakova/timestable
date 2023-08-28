@@ -1,16 +1,6 @@
 # timestable
 
-A new Flutter project.
+<img src="https://github.com/zarnigorumrzakova/timestable/assets/139987349/4cd53d7a-bec9-4074-abca-78a435704c6a" width="300" height="620"/>,
+<img src="https://github.com/zarnigorumrzakova/timestable/assets/139987349/2a910fab-05e3-472f-ac92-263507c9f92c" width="300" height="620"/>,
+<img src="https://github.com/zarnigorumrzakova/timestable/assets/139987349/ee45451b-a2bc-4c16-886c-cb3a70f56419" width="300" height="620"/>,
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
