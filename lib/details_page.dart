@@ -1,47 +1,47 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class OnePage extends StatelessWidget {
+class DetailsPage extends StatelessWidget {
   final int num;
 
-  const OnePage({super.key, required this.num});
+  const DetailsPage({super.key, required this.num});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       body: Container(
         alignment: Alignment.center,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             gradient: LinearGradient(
-                colors: [Colors.white10, Colors.white],
+                colors: [Colors.redAccent, Colors.white],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight)),
         child: Column(
           children: [
-            SizedBox(
-              height: 40,
+            const SizedBox(
+              height: 30,
               width: double.infinity,
             ),
             IconButton(
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: Icon(Icons.arrow_circle_left_outlined),
-              iconSize: 50,
-              color: Colors.green,
+              icon: const Icon(Icons.arrow_circle_left_outlined),
+              iconSize: 40,
+              color: Colors.white,
             ),
-            SizedBox(height: 50, width: 370),
+            const SizedBox(height: 2, width: 2),
             Expanded(
               child: ListView.builder(
                 itemCount: 10,
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) {
-                  return  Center(
+                  return Center(
                     child: Text(
-                      '${num} x ${index+1} = ${num * (index+1)}',
-                      style:
-                      GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
+                      '$num x ${index + 1} = ${num * (index + 1)}',
+                      style: GoogleFonts.acme(
+                          fontSize: 50, fontWeight: FontWeight.w600),
                     ),
                   );
                 },
