@@ -9,94 +9,90 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.red,
       body: Container(
-        alignment: Alignment.center,
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         decoration: const BoxDecoration(
             gradient: LinearGradient(
-                colors: [Colors.redAccent, Colors.white],
+                colors: [Colors.white, Colors.red],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight)),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(
               height: 30,
-              width: double.infinity,
+              width: 100,
             ),
             IconButton(
               onPressed: () {
                 Navigator.pop(context);
               },
               icon: const Icon(Icons.arrow_circle_left_outlined),
-              iconSize: 40,
-              color: Colors.white,
+              iconSize: 50,
+              color: Colors.red,
             ),
-            const SizedBox(height: 2, width: 2),
-            Expanded(
-              child: ListView.builder(
-                itemCount: 10,
-                physics: const NeverScrollableScrollPhysics(),
-                itemBuilder: (context, index) {
-                  return Center(
-                    child: Text(
-                      '$num x ${index + 1} = ${num * (index + 1)}',
-                      style: GoogleFonts.acme(
-                          fontSize: 50, fontWeight: FontWeight.w600),
-                    ),
-                  );
-                },
-              ),
-            ),
-            // Text(
-            //   '${num} x 1 = ${num * 1}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 2 = ${num * 2}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 3 = ${num * 3}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 4 = ${num * 4}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 5 = ${num * 5}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 6 = ${num * 6}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 7 = ${num * 7}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 8 = ${num * 8}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 9 = ${num * 9}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
-            // Text(
-            //   '${num} x 10 = ${num * 10}',
-            //   style:
-            //       GoogleFonts.acme(fontSize: 50, fontWeight: FontWeight.w600),
-            // ),
+            const SizedBox(height: 10, width: 300),
+            Center(
+                child: Text(
+                  '$num x 1 = ${num * 1}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 2 = ${num * 2}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 3 = ${num * 3}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 4 = ${num * 4}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 5 = ${num * 5}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 6 = ${num * 6}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 7 = ${num * 7}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 8 = ${num * 8}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 9 = ${num * 9}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
+            Center(
+                child: Text(
+                  '$num x 10 = ${num * 10}',
+                  style:
+                  GoogleFonts.acme(fontSize: 40, fontWeight: FontWeight.w600),
+                )),
           ],
         ),
       ),
